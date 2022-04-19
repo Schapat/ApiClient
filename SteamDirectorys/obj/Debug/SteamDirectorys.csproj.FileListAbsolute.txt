@@ -1,0 +1,12 @@
+C:\Users\patri\Documents\GitHub\SteamDirectorys\bin\Debug\SteamDirectorys.dll
+C:\Users\patri\Documents\GitHub\SteamDirectorys\bin\Debug\SteamDirectorys.pdb
+C:\Users\patri\Documents\GitHub\SteamDirectorys\obj\Debug\SteamDirectorys.csproj.AssemblyReference.cache
+C:\Users\patri\Documents\GitHub\SteamDirectorys\obj\Debug\SteamDirectorys.csproj.CoreCompileInputs.cache
+C:\Users\patri\Documents\GitHub\SteamDirectorys\obj\Debug\SteamDirectorys.dll
+C:\Users\patri\Documents\GitHub\SteamDirectorys\obj\Debug\SteamDirectorys.pdb
+C:\Users\patri\Documents\GitHub\Project\SteamDirectorys\bin\Debug\SteamDirectorys.dll
+C:\Users\patri\Documents\GitHub\Project\SteamDirectorys\bin\Debug\SteamDirectorys.pdb
+C:\Users\patri\Documents\GitHub\Project\SteamDirectorys\obj\Debug\SteamDirectorys.csproj.AssemblyReference.cache
+C:\Users\patri\Documents\GitHub\Project\SteamDirectorys\obj\Debug\SteamDirectorys.csproj.CoreCompileInputs.cache
+C:\Users\patri\Documents\GitHub\Project\SteamDirectorys\obj\Debug\SteamDirectorys.dll
+C:\Users\patri\Documents\GitHub\Project\SteamDirectorys\obj\Debug\SteamDirectorys.pdb

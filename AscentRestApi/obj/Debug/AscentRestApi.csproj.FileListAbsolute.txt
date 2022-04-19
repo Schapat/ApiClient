@@ -1,0 +1,12 @@
+C:\Users\patri\Documents\GitHub\AscentRestApi\bin\Debug\AscentRestApi.dll
+C:\Users\patri\Documents\GitHub\AscentRestApi\bin\Debug\AscentRestApi.pdb
+C:\Users\patri\Documents\GitHub\AscentRestApi\obj\Debug\AscentRestApi.csproj.AssemblyReference.cache
+C:\Users\patri\Documents\GitHub\AscentRestApi\obj\Debug\AscentRestApi.csproj.CoreCompileInputs.cache
+C:\Users\patri\Documents\GitHub\AscentRestApi\obj\Debug\AscentRestApi.dll
+C:\Users\patri\Documents\GitHub\AscentRestApi\obj\Debug\AscentRestApi.pdb
+C:\Users\patri\Documents\GitHub\Project\AscentRestApi\bin\Debug\AscentRestApi.dll
+C:\Users\patri\Documents\GitHub\Project\AscentRestApi\bin\Debug\AscentRestApi.pdb
+C:\Users\patri\Documents\GitHub\Project\AscentRestApi\obj\Debug\AscentRestApi.csproj.AssemblyReference.cache
+C:\Users\patri\Documents\GitHub\Project\AscentRestApi\obj\Debug\AscentRestApi.csproj.CoreCompileInputs.cache
+C:\Users\patri\Documents\GitHub\Project\AscentRestApi\obj\Debug\AscentRestApi.dll
+C:\Users\patri\Documents\GitHub\Project\AscentRestApi\obj\Debug\AscentRestApi.pdb
