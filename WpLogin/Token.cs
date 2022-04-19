@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WpLogin
 {
-    public class TokenRequest
+    public class Token
     {
         public string token;
         public string user_email;

@@ -13,10 +13,7 @@ namespace WpLogin
 {
     public class Authentication
     {
-        TokenRequest tokenRequest;
-        public Authentication()
-        {
-        }
+        Token tokenRequest;
         public async void LoginToWordpress(string userName, string password)
         {
             using (RestApi.client = new HttpClient())
@@ -33,7 +30,7 @@ namespace WpLogin
                 if (RestApi.IsConnected(response))
                 {
                     var responseString = await response.Content.ReadAsStringAsync();
-                    tokenRequest = JsonConvert.DeserializeObject<TokenRequest>(responseString);
+                    tokenRequest = JsonConvert.DeserializeObject<Token>(responseString);
                     RestApi.client.DefaultRequestHeaders.Add("Authorization", "Bearer " + tokenRequest.token);
                 }
                 
