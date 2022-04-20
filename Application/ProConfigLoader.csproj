@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{087A1690-B188-4B56-95D7-17C5383E3A89}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Application</RootNamespace>
+    <RootNamespace>ProConfigLoader</RootNamespace>
     <AssemblyName>ProConfigLoader</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
