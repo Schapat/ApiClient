@@ -14,10 +14,10 @@ namespace ProConfigLoader
     {
         public async Task<List<ProConfig>> GetProConfig()
         {
-            ProConfig proConfig = new ProConfig();
+            ProConfig proConfig;
             List<ProConfig> proConfigList = new List<ProConfig>();
             //Hier muss nachher der Login token uebergeben werden
-            using (RestApi.client)
+            using (RestApi.client = new HttpClient())
             {
 
                 string url = RestApi.baseAddress + RestApi.proConfigAdress;

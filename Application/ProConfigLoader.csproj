@@ -91,6 +91,10 @@
       <Project>{c493aee6-5771-4c21-97d7-76ce5a932d5e}</Project>
       <Name>AscentRestApi</Name>
     </ProjectReference>
+    <ProjectReference Include="..\SteamDirectorys\Steam.csproj">
+      <Project>{cff1f92a-cb4a-4abd-8170-ad68e0f14296}</Project>
+      <Name>Steam</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

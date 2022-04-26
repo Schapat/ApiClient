@@ -13,5 +13,15 @@ namespace ProConfigLoader
         public string config;
         public string autoexec;
         public string video;
+
+        public ProConfig()
+        {
+
+        }
+        public void WriteToCfgDirectory(string csCfgDir)
+        {
+
+        }
+
     }
 }

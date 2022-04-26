@@ -30,3 +30,5 @@ C:\Users\patri\Documents\GitHub\Project\Application\obj\Debug\ProConfigLoader.cs
 C:\Users\patri\Documents\GitHub\Project\Application\obj\Debug\ProConfigLoader.csproj.CopyComplete
 C:\Users\patri\Documents\GitHub\Project\Application\obj\Debug\ProConfigLoader.exe
 C:\Users\patri\Documents\GitHub\Project\Application\obj\Debug\ProConfigLoader.pdb
+C:\Users\patri\Documents\GitHub\Project\Application\bin\Debug\SteamDirectorys.dll
+C:\Users\patri\Documents\GitHub\Project\Application\bin\Debug\SteamDirectorys.pdb

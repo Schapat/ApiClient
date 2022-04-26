@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Steam;
 
 namespace ProConfigLoader
 {
@@ -16,6 +17,8 @@ namespace ProConfigLoader
         public Form1()
         {
             InitializeComponent();
+            LoadProConfigNames();
+            LoadSteamDirectorys();
         }
 
         private void btnUseCfg_Click(object sender, EventArgs e)
@@ -29,13 +32,18 @@ namespace ProConfigLoader
             var proConfigs = await proConfigRequest.GetProConfig();
             foreach (var config in proConfigs)
             {
-                //cBoxProConfig.Items.Add(config.pro_name);
+                cBoxProConfig.Items.Add(config.pro_name);
             }
         }
 
-        private void LoadSteamDirectors()
+        private void LoadSteamDirectorys()
         {
-
+            SteamDirectorys steamDirectorys = new SteamDirectorys();
+            var csCfgDir = steamDirectorys.FindSteamDirectorys();
+            foreach (var directory in csCfgDir)
+            {
+                cBoxSteamDir.Items.Add(directory.cfgDir);
+            }
         }
     }
 }

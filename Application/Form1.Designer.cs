@@ -32,8 +32,8 @@
             this.cBoxConfig = new System.Windows.Forms.CheckBox();
             this.cBoxVideo = new System.Windows.Forms.CheckBox();
             this.cBoxAutoexec = new System.Windows.Forms.CheckBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cBoxSteamDir = new System.Windows.Forms.ComboBox();
+            this.cBoxProConfig = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // btnUseCfg
@@ -76,29 +76,29 @@
             this.cBoxAutoexec.Text = "Autoexec";
             this.cBoxAutoexec.UseVisualStyleBackColor = true;
             // 
-            // comboBox1
+            // cBoxSteamDir
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(12, 12);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(321, 21);
-            this.comboBox1.TabIndex = 4;
+            this.cBoxSteamDir.FormattingEnabled = true;
+            this.cBoxSteamDir.Location = new System.Drawing.Point(12, 12);
+            this.cBoxSteamDir.Name = "cBoxSteamDir";
+            this.cBoxSteamDir.Size = new System.Drawing.Size(321, 21);
+            this.cBoxSteamDir.TabIndex = 4;
             // 
-            // comboBox2
+            // cBoxProConfig
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(12, 39);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(321, 21);
-            this.comboBox2.TabIndex = 5;
+            this.cBoxProConfig.FormattingEnabled = true;
+            this.cBoxProConfig.Location = new System.Drawing.Point(12, 39);
+            this.cBoxProConfig.Name = "cBoxProConfig";
+            this.cBoxProConfig.Size = new System.Drawing.Size(321, 21);
+            this.cBoxProConfig.TabIndex = 5;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(352, 144);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cBoxProConfig);
+            this.Controls.Add(this.cBoxSteamDir);
             this.Controls.Add(this.cBoxAutoexec);
             this.Controls.Add(this.cBoxVideo);
             this.Controls.Add(this.cBoxConfig);
@@ -116,8 +116,8 @@
         private System.Windows.Forms.CheckBox cBoxConfig;
         private System.Windows.Forms.CheckBox cBoxVideo;
         private System.Windows.Forms.CheckBox cBoxAutoexec;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cBoxSteamDir;
+        private System.Windows.Forms.ComboBox cBoxProConfig;
     }
 }
 

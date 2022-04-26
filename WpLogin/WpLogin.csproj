@@ -98,6 +98,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Application\ProConfigLoader.csproj">
+      <Project>{087a1690-b188-4b56-95d7-17c5383e3a89}</Project>
+      <Name>ProConfigLoader</Name>
+    </ProjectReference>
     <ProjectReference Include="..\AscentRestApi\AscentRestApi.csproj">
       <Project>{c493aee6-5771-4c21-97d7-76ce5a932d5e}</Project>
       <Name>AscentRestApi</Name>

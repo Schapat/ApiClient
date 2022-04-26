@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpLogin", "WpLogin.csproj",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProConfigLoader", "..\Application\ProConfigLoader.csproj", "{087A1690-B188-4B56-95D7-17C5383E3A89}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SteamDirectorys", "..\SteamDirectorys\SteamDirectorys.csproj", "{CFF1F92A-CB4A-4ABD-8170-AD68E0F14296}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Steam", "..\SteamDirectorys\Steam.csproj", "{CFF1F92A-CB4A-4ABD-8170-AD68E0F14296}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AscentRestApi", "..\AscentRestApi\AscentRestApi.csproj", "{C493AEE6-5771-4C21-97D7-76CE5A932D5E}"
 EndProject
