@@ -24,7 +24,6 @@ C:\Users\patri\Documents\GitHub\Project\Application\bin\Debug\Newtonsoft.Json.xm
 C:\Users\patri\Documents\GitHub\Project\Application\obj\Debug\ProConfigLoader.csproj.AssemblyReference.cache
 C:\Users\patri\Documents\GitHub\Project\Application\obj\Debug\ProConfigLoader.csproj.SuggestedBindingRedirects.cache
 C:\Users\patri\Documents\GitHub\Project\Application\obj\Debug\ProConfigLoader.Form1.resources
-C:\Users\patri\Documents\GitHub\Project\Application\obj\Debug\Application.Properties.Resources.resources
 C:\Users\patri\Documents\GitHub\Project\Application\obj\Debug\ProConfigLoader.csproj.GenerateResource.cache
 C:\Users\patri\Documents\GitHub\Project\Application\obj\Debug\ProConfigLoader.csproj.CoreCompileInputs.cache
 C:\Users\patri\Documents\GitHub\Project\Application\obj\Debug\ProConfigLoader.csproj.CopyComplete
@@ -32,3 +31,4 @@ C:\Users\patri\Documents\GitHub\Project\Application\obj\Debug\ProConfigLoader.ex
 C:\Users\patri\Documents\GitHub\Project\Application\obj\Debug\ProConfigLoader.pdb
 C:\Users\patri\Documents\GitHub\Project\Application\bin\Debug\SteamDirectorys.dll
 C:\Users\patri\Documents\GitHub\Project\Application\bin\Debug\SteamDirectorys.pdb
+C:\Users\patri\Documents\GitHub\Project\Application\obj\Debug\ProConfigLoader.Properties.Resources.resources

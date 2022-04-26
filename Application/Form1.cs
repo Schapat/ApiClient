@@ -14,6 +14,8 @@ namespace ProConfigLoader
 {
     public partial class Form1 : Form
     {
+        private List<ProConfig>proConfigs;
+
         public Form1()
         {
             InitializeComponent();
@@ -23,13 +25,21 @@ namespace ProConfigLoader
 
         private void btnUseCfg_Click(object sender, EventArgs e)
         {
-
+            foreach (var config in proConfigs)
+            {
+                if (config.pro_name == cBoxProConfig.Text)
+                {
+                    config.WriteCfgToDirectory(cBoxSteamDir.Text);
+                    config.WriteVideoToDirectory(cBoxSteamDir.Text);
+                    config.WriteAutoexecToDirectory(cBoxSteamDir.Text);
+                }
+            }
         }
 
         private async void LoadProConfigNames()
         {
             ProConfigRequest proConfigRequest = new ProConfigRequest();
-            var proConfigs = await proConfigRequest.GetProConfig();
+            proConfigs = await proConfigRequest.GetProConfig();
             foreach (var config in proConfigs)
             {
                 cBoxProConfig.Items.Add(config.pro_name);

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,9 +19,58 @@ namespace ProConfigLoader
         {
 
         }
-        public void WriteToCfgDirectory(string csCfgDir)
-        {
 
+        public bool HasConfig()
+        {
+            if(this.config == null)
+            {
+                return false;
+            }
+            return true;
+        }
+
+        public bool HasAutoexec()
+        {
+            if (this.autoexec == null)
+            {
+                return false;
+            }
+            return true;
+        }
+
+        public bool HasVideo()
+        {
+            if (this.video == null)
+            {
+                return false;
+            }
+            return true;
+        }
+
+        public void WriteCfgToDirectory(string csCfgDir)
+        {
+            if (this.HasConfig())
+            {
+                File.WriteAllText(csCfgDir + "config.cfg", this.config);
+            }
+        }
+
+        public void WriteAutoexecToDirectory(string csCfgDir)
+        {
+            if (this.HasAutoexec())
+            {
+                File.WriteAllText(csCfgDir + "Autoexec.cfg", this.config);
+            }
+            
+        }
+
+        public void WriteVideoToDirectory(string csCfgDir)
+        {
+            if (this.HasVideo())
+            {
+                File.WriteAllText(csCfgDir + "Video.txt", this.config);
+            }
+            
         }
 
     }
