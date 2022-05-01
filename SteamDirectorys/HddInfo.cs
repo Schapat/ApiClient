@@ -9,11 +9,11 @@ namespace Steam
 {
     public class HddInfo
     {
-        public List<String> drivers;
+        public List<String> drives;
 
         public HddInfo()
         {
-            drivers = new List<String>();
+            drives = new List<String>();
             getDrives();
         }
 
@@ -24,7 +24,7 @@ namespace Steam
 
             foreach (DriveInfo d in allDrives)
             {
-                drivers.Add(d.Name);
+                drives.Add(d.Name);
             }
         }
     }

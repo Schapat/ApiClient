@@ -19,9 +19,9 @@ namespace Steam
 
         public List<SteamDirectoryPath> FindSteamDirectorys()
         {
-            HddInfo driverInfo = new HddInfo();
+            HddInfo hddInfo = new HddInfo();
 
-            foreach (var drive in driverInfo.drivers)
+            foreach (var drive in hddInfo.drives)
             {
                 foreach (var dir in Directory.GetDirectories(drive))
                 {

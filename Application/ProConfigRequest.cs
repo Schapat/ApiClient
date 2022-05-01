@@ -38,7 +38,7 @@ namespace ProConfigLoader
                         proConfigList.Add(proConfig);
 
                     }
-                    return proConfigList;
+                    return proConfigs;
                 }
             }
             return null;
