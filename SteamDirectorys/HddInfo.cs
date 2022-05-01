@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace Steam
 {
-    public class DriverInfo
+    public class HddInfo
     {
         public List<String> drivers;
 
-        public DriverInfo()
+        public HddInfo()
         {
             drivers = new List<String>();
             getDrives();

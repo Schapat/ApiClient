@@ -14,13 +14,13 @@ namespace WpLogin
     public class Authentication
     {
         Token tokenRequest;
-        public async void LoginToWordpress(string userName, string password)
+        public async void LoginToWordpress(string username, string password)
         {
             using (RestApi.client = new HttpClient())
             {
                 var values = new Dictionary<string, string>
             {
-                { "username", userName },
+                { "username", username },
                 { "password", password }
             };
 

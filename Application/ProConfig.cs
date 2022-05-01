@@ -17,7 +17,6 @@ namespace ProConfigLoader
 
         public ProConfig()
         {
-
         }
 
         public bool HasConfig()

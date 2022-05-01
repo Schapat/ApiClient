@@ -19,7 +19,7 @@ namespace Steam
 
         public List<SteamDirectoryPath> FindSteamDirectorys()
         {
-            DriverInfo driverInfo = new DriverInfo();
+            HddInfo driverInfo = new HddInfo();
 
             foreach (var drive in driverInfo.drivers)
             {

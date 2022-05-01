@@ -26,9 +26,18 @@ namespace ProConfigLoader
 
         private void btnUseCfg_Click(object sender, EventArgs e)
         {
-            selectedProConfig.WriteCfgToDirectory(cBoxSteamDir.Text);
-            selectedProConfig.WriteVideoToDirectory(cBoxSteamDir.Text);
-            selectedProConfig.WriteAutoexecToDirectory(cBoxSteamDir.Text);
+            if (cBoxConfig.Checked && cBoxConfig.Enabled)
+            {
+                selectedProConfig.WriteCfgToDirectory(cBoxSteamDir.Text);
+            }
+            if(cBoxAutoexec.Checked && cBoxAutoexec.Enabled)
+            {
+                selectedProConfig.WriteAutoexecToDirectory(cBoxSteamDir.Text);
+            }
+            if(cBoxVideo.Checked && cBoxVideo.Enabled)
+            {
+                selectedProConfig.WriteVideoToDirectory(cBoxSteamDir.Text);
+            }
         }
 
         private async void LoadProConfigNames()
@@ -39,6 +48,7 @@ namespace ProConfigLoader
             {
                 cBoxProConfig.Items.Add(config.pro_name);
             }
+            cBoxProConfig.SelectedIndex = 0;
         }
 
         private void LoadSteamDirectorys()
@@ -49,6 +59,7 @@ namespace ProConfigLoader
             {
                 cBoxSteamDir.Items.Add(directory.cfgDir);
             }
+            cBoxSteamDir.SelectedIndex = 0;
         }
 
         private void cBoxProConfig_SelectedIndexChanged(object sender, EventArgs e)
@@ -60,18 +71,29 @@ namespace ProConfigLoader
                     selectedProConfig = config;
                 }
             }
-
-            if (!selectedProConfig.HasVideo())
+            if (selectedProConfig.HasConfig())
             {
-                cBoxVideo.Enabled = false;            
+                cBoxConfig.Enabled = true;
             }
-
-            if (!selectedProConfig.HasConfig())
+            else
             {
                 cBoxConfig.Enabled = false;
             }
 
-            if (!selectedProConfig.HasAutoexec())
+            if (selectedProConfig.HasVideo())
+            {
+                cBoxVideo.Enabled = true;
+            }
+            else
+            {
+                cBoxVideo.Enabled = false;
+            }
+
+            if (selectedProConfig.HasAutoexec())
+            {
+                cBoxAutoexec.Enabled = true;
+            }
+            else
             {
                 cBoxAutoexec.Enabled = false;
             }
