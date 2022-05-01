@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
+    "\\Application",
     "\\WpLogin"
   ],
-  "SelectedNode": "\\WpLogin\\Authentication.cs",
+  "SelectedNode": "\\Application\\ProConfigRequest.cs",
   "PreviewInSolutionExplorer": false
 }

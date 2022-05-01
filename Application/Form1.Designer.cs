@@ -49,6 +49,8 @@
             // cBoxConfig
             // 
             this.cBoxConfig.AutoSize = true;
+            this.cBoxConfig.Checked = true;
+            this.cBoxConfig.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cBoxConfig.Location = new System.Drawing.Point(12, 66);
             this.cBoxConfig.Name = "cBoxConfig";
             this.cBoxConfig.Size = new System.Drawing.Size(56, 17);
@@ -59,6 +61,8 @@
             // cBoxVideo
             // 
             this.cBoxVideo.AutoSize = true;
+            this.cBoxVideo.Checked = true;
+            this.cBoxVideo.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cBoxVideo.Location = new System.Drawing.Point(12, 90);
             this.cBoxVideo.Name = "cBoxVideo";
             this.cBoxVideo.Size = new System.Drawing.Size(53, 17);
@@ -69,6 +73,8 @@
             // cBoxAutoexec
             // 
             this.cBoxAutoexec.AutoSize = true;
+            this.cBoxAutoexec.Checked = true;
+            this.cBoxAutoexec.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cBoxAutoexec.Location = new System.Drawing.Point(12, 113);
             this.cBoxAutoexec.Name = "cBoxAutoexec";
             this.cBoxAutoexec.Size = new System.Drawing.Size(71, 17);
@@ -91,6 +97,7 @@
             this.cBoxProConfig.Name = "cBoxProConfig";
             this.cBoxProConfig.Size = new System.Drawing.Size(321, 21);
             this.cBoxProConfig.TabIndex = 5;
+            this.cBoxProConfig.SelectedIndexChanged += new System.EventHandler(this.cBoxProConfig_SelectedIndexChanged);
             // 
             // Form1
             // 
