@@ -59,7 +59,7 @@ namespace ProConfigLoader
         {
             if (this.HasAutoexec())
             {
-                File.WriteAllText(csCfgDir + "Autoexec.cfg", this.config);
+                File.WriteAllText(csCfgDir + "Autoexec.cfg", this.autoexec);
             }
             
         }
@@ -68,7 +68,7 @@ namespace ProConfigLoader
         {
             if (this.HasVideo())
             {
-                File.WriteAllText(csCfgDir + "Video.txt", this.config);
+                File.WriteAllText(csCfgDir + "Video.txt", this.video);
             }
             
         }
