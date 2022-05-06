@@ -28,8 +28,5 @@ C:\Users\patri\Documents\GitHub\Project\WpLogin\bin\Debug\System.IdentityModel.T
 C:\Users\patri\Documents\GitHub\Project\WpLogin\obj\Debug\WpLogin.csproj.CopyComplete
 C:\Users\patri\Documents\GitHub\Project\WpLogin\obj\Debug\WpLogin.exe
 C:\Users\patri\Documents\GitHub\Project\WpLogin\obj\Debug\WpLogin.pdb
-C:\Users\patri\Documents\GitHub\Project\WpLogin\bin\Debug\ProConfigLoader.exe
 C:\Users\patri\Documents\GitHub\Project\WpLogin\bin\Debug\SteamDirectorys.dll
-C:\Users\patri\Documents\GitHub\Project\WpLogin\bin\Debug\ProConfigLoader.pdb
-C:\Users\patri\Documents\GitHub\Project\WpLogin\bin\Debug\ProConfigLoader.exe.config
 C:\Users\patri\Documents\GitHub\Project\WpLogin\bin\Debug\SteamDirectorys.pdb
