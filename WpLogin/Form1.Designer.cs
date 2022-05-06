@@ -32,9 +32,12 @@
             this.btnReg = new System.Windows.Forms.Button();
             this.tbUser = new System.Windows.Forms.TextBox();
             this.tbPass = new System.Windows.Forms.TextBox();
-            this.txtBoxOutput = new System.Windows.Forms.TextBox();
+            this.btnUseCfg = new System.Windows.Forms.Button();
             this.cBoxProConfig = new System.Windows.Forms.ComboBox();
-            this.cBoxSteamDirectorys = new System.Windows.Forms.ComboBox();
+            this.cBoxSteamDir = new System.Windows.Forms.ComboBox();
+            this.cBoxAutoexec = new System.Windows.Forms.CheckBox();
+            this.cBoxVideo = new System.Windows.Forms.CheckBox();
+            this.cBoxConfig = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // btnLogin
@@ -70,37 +73,80 @@
             this.tbPass.Size = new System.Drawing.Size(152, 20);
             this.tbPass.TabIndex = 3;
             // 
-            // txtBoxOutput
+            // btnUseCfg
             // 
-            this.txtBoxOutput.Location = new System.Drawing.Point(25, 148);
-            this.txtBoxOutput.Name = "txtBoxOutput";
-            this.txtBoxOutput.Size = new System.Drawing.Size(298, 20);
-            this.txtBoxOutput.TabIndex = 4;
+            this.btnUseCfg.Location = new System.Drawing.Point(105, 182);
+            this.btnUseCfg.Name = "btnUseCfg";
+            this.btnUseCfg.Size = new System.Drawing.Size(230, 63);
+            this.btnUseCfg.TabIndex = 9;
+            this.btnUseCfg.Text = "use CFG";
+            this.btnUseCfg.UseVisualStyleBackColor = true;
+            this.btnUseCfg.Click += new System.EventHandler(this.btnUseCfg_Click);
             // 
             // cBoxProConfig
             // 
             this.cBoxProConfig.FormattingEnabled = true;
-            this.cBoxProConfig.Location = new System.Drawing.Point(25, 195);
+            this.cBoxProConfig.Location = new System.Drawing.Point(25, 154);
             this.cBoxProConfig.Name = "cBoxProConfig";
-            this.cBoxProConfig.Size = new System.Drawing.Size(121, 21);
-            this.cBoxProConfig.TabIndex = 7;
+            this.cBoxProConfig.Size = new System.Drawing.Size(310, 21);
+            this.cBoxProConfig.TabIndex = 14;
+            this.cBoxProConfig.SelectedIndexChanged += new System.EventHandler(this.cBoxProConfig_SelectedIndexChanged);
             // 
-            // cBoxSteamDirectorys
+            // cBoxSteamDir
             // 
-            this.cBoxSteamDirectorys.FormattingEnabled = true;
-            this.cBoxSteamDirectorys.Location = new System.Drawing.Point(202, 195);
-            this.cBoxSteamDirectorys.Name = "cBoxSteamDirectorys";
-            this.cBoxSteamDirectorys.Size = new System.Drawing.Size(121, 21);
-            this.cBoxSteamDirectorys.TabIndex = 8;
+            this.cBoxSteamDir.FormattingEnabled = true;
+            this.cBoxSteamDir.Location = new System.Drawing.Point(25, 127);
+            this.cBoxSteamDir.Name = "cBoxSteamDir";
+            this.cBoxSteamDir.Size = new System.Drawing.Size(310, 21);
+            this.cBoxSteamDir.TabIndex = 13;
+            // 
+            // cBoxAutoexec
+            // 
+            this.cBoxAutoexec.AutoSize = true;
+            this.cBoxAutoexec.Checked = true;
+            this.cBoxAutoexec.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cBoxAutoexec.Location = new System.Drawing.Point(25, 228);
+            this.cBoxAutoexec.Name = "cBoxAutoexec";
+            this.cBoxAutoexec.Size = new System.Drawing.Size(71, 17);
+            this.cBoxAutoexec.TabIndex = 12;
+            this.cBoxAutoexec.Text = "Autoexec";
+            this.cBoxAutoexec.UseVisualStyleBackColor = true;
+            // 
+            // cBoxVideo
+            // 
+            this.cBoxVideo.AutoSize = true;
+            this.cBoxVideo.Checked = true;
+            this.cBoxVideo.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cBoxVideo.Location = new System.Drawing.Point(25, 205);
+            this.cBoxVideo.Name = "cBoxVideo";
+            this.cBoxVideo.Size = new System.Drawing.Size(53, 17);
+            this.cBoxVideo.TabIndex = 11;
+            this.cBoxVideo.Text = "Video";
+            this.cBoxVideo.UseVisualStyleBackColor = true;
+            // 
+            // cBoxConfig
+            // 
+            this.cBoxConfig.AutoSize = true;
+            this.cBoxConfig.Checked = true;
+            this.cBoxConfig.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cBoxConfig.Location = new System.Drawing.Point(25, 181);
+            this.cBoxConfig.Name = "cBoxConfig";
+            this.cBoxConfig.Size = new System.Drawing.Size(56, 17);
+            this.cBoxConfig.TabIndex = 10;
+            this.cBoxConfig.Text = "Config";
+            this.cBoxConfig.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(364, 390);
-            this.Controls.Add(this.cBoxSteamDirectorys);
+            this.ClientSize = new System.Drawing.Size(365, 265);
             this.Controls.Add(this.cBoxProConfig);
-            this.Controls.Add(this.txtBoxOutput);
+            this.Controls.Add(this.cBoxSteamDir);
+            this.Controls.Add(this.cBoxAutoexec);
+            this.Controls.Add(this.cBoxVideo);
+            this.Controls.Add(this.cBoxConfig);
+            this.Controls.Add(this.btnUseCfg);
             this.Controls.Add(this.tbPass);
             this.Controls.Add(this.tbUser);
             this.Controls.Add(this.btnReg);
@@ -118,9 +164,12 @@
         private System.Windows.Forms.Button btnReg;
         private System.Windows.Forms.TextBox tbUser;
         private System.Windows.Forms.TextBox tbPass;
-        private System.Windows.Forms.TextBox txtBoxOutput;
+        private System.Windows.Forms.Button btnUseCfg;
         private System.Windows.Forms.ComboBox cBoxProConfig;
-        private System.Windows.Forms.ComboBox cBoxSteamDirectorys;
+        private System.Windows.Forms.ComboBox cBoxSteamDir;
+        private System.Windows.Forms.CheckBox cBoxAutoexec;
+        private System.Windows.Forms.CheckBox cBoxVideo;
+        private System.Windows.Forms.CheckBox cBoxConfig;
     }
 }
 

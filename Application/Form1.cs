@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Steam;
+using AscentRestApi;
 
 namespace ProConfigLoader
 {
@@ -40,17 +41,16 @@ namespace ProConfigLoader
             }
         }
 
-        private async void LoadProConfigNames()
+        private async Task LoadProConfigNames()
         {
             ProConfigRequest proConfigRequest = new ProConfigRequest();
-            proConfigs = await proConfigRequest.GetProConfig();
+            proConfigs = proConfigRequest.GetProConfig();
             foreach (var config in proConfigs)
             {
                 cBoxProConfig.Items.Add(config.pro_name);
             }
             cBoxProConfig.SelectedIndex = 0;
         }
-
         private void LoadSteamDirectorys()
         {
             SteamDirectorys steamDirectorys = new SteamDirectorys();

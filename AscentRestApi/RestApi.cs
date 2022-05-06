@@ -13,10 +13,9 @@ namespace AscentRestApi
     {
         public HttpClient client;
         private Token tokenRequest;
-        private String username;
-        private String password;
         private HttpResponseMessage tokenResponse;
         private HttpResponseMessage proConfigResponse;
+        public bool IsAuthenticated = false;
 
         public static string baseAddress = "http://127.0.0.1/wordpress/";
         //Validation 
@@ -28,11 +27,8 @@ namespace AscentRestApi
         private static string csgoAddress = jsonAddress + "/csgo/v1";
         public static string proConfigAdress = csgoAddress + "/pro_config";
 
-
-        public RestApi(String username, String password)
+        public RestApi()
         {
-            this.username = username;
-            this.password = password;
             client = new HttpClient();
         }
 
@@ -41,9 +37,9 @@ namespace AscentRestApi
            return response.IsSuccessStatusCode;
         }
 
-        public async Task<List<ProConfig>> GetProConfig()
+        public async Task<List<ProConfig>>ProConfigRequest()
         {
-            string url = RestApi.baseAddress + RestApi.proConfigAdress;
+            string url = baseAddress + proConfigAdress;
             proConfigResponse = await client.GetAsync(url);
             if (IsConnected(proConfigResponse))
             {
@@ -54,7 +50,7 @@ namespace AscentRestApi
             return null;
         }
 
-        public async void TokenRequest()
+        private async Task TokenRequest(string username, string password)
         {
             var values = new Dictionary<string, string>
             {
@@ -64,17 +60,23 @@ namespace AscentRestApi
 
             string url = baseAddress + jwtToken;
             var data = new FormUrlEncodedContent(values);
-            this.tokenResponse = await client.PostAsync(url, data);
+            tokenResponse = await client.PostAsync(url, data);
         }
 
-        public async void SetLoginToken()
+        private async Task SetLoginToken()
         {
             if (IsConnected(tokenResponse))
             {
                 var responseString = await tokenResponse.Content.ReadAsStringAsync();
                 tokenRequest = JsonConvert.DeserializeObject<Token>(responseString);
                 client.DefaultRequestHeaders.Add("Authorization", "Bearer " + tokenRequest.token);
+                IsAuthenticated = true;
             }
+        }
+        public async Task Login(string username, string password)
+        {
+            await TokenRequest(username, password);
+            await SetLoginToken();
         }
     }
 }
