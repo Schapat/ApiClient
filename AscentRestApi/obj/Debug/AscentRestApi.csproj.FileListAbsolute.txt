@@ -10,3 +10,6 @@ C:\Users\patri\Documents\GitHub\Project\AscentRestApi\obj\Debug\AscentRestApi.cs
 C:\Users\patri\Documents\GitHub\Project\AscentRestApi\obj\Debug\AscentRestApi.csproj.CoreCompileInputs.cache
 C:\Users\patri\Documents\GitHub\Project\AscentRestApi\obj\Debug\AscentRestApi.dll
 C:\Users\patri\Documents\GitHub\Project\AscentRestApi\obj\Debug\AscentRestApi.pdb
+C:\Users\patri\Documents\GitHub\Project\AscentRestApi\bin\Debug\Newtonsoft.Json.dll
+C:\Users\patri\Documents\GitHub\Project\AscentRestApi\bin\Debug\Newtonsoft.Json.xml
+C:\Users\patri\Documents\GitHub\Project\AscentRestApi\obj\Debug\AscentRestApi.csproj.CopyComplete

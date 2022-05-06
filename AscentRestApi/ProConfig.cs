@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProConfigLoader
+namespace AscentRestApi
 {
     public class ProConfig
     {
@@ -21,29 +21,17 @@ namespace ProConfigLoader
 
         public bool HasConfig()
         {
-            if(this.config == null)
-            {
-                return false;
-            }
-            return true;
+            return this.config != null;
         }
 
         public bool HasAutoexec()
         {
-            if (this.autoexec == null)
-            {
-                return false;
-            }
-            return true;
+            return this.autoexec != null;
         }
 
         public bool HasVideo()
         {
-            if (this.video == null)
-            {
-                return false;
-            }
-            return true;
+            return this.video != null;
         }
 
         public void WriteCfgToDirectory(string csCfgDir)

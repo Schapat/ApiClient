@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AscentRestApi;
 
 namespace WpLogin
 {
@@ -19,8 +20,9 @@ namespace WpLogin
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            Authentication authentication = new Authentication();
-            authentication.LoginToWordpress(tbUser.Text, tbPass.Text);
+            RestApi restApi = new RestApi(tbUser.Text,tbPass.Text);
+            restApi.TokenRequest();
+            restApi.SetLoginToken();
         }
 
         private void btnOutput_Click(object sender, EventArgs e)
