@@ -47,8 +47,7 @@ namespace AscentRestApi
             if (this.HasAutoexec())
             {
                 File.WriteAllText(csCfgDir + "Autoexec.cfg", this.autoexec);
-            }
-            
+            }  
         }
 
         public void WriteVideoToDirectory(string csCfgDir)
@@ -56,9 +55,7 @@ namespace AscentRestApi
             if (this.HasVideo())
             {
                 File.WriteAllText(csCfgDir + "Video.txt", this.video);
-            }
-            
+            }   
         }
-
     }
 }
