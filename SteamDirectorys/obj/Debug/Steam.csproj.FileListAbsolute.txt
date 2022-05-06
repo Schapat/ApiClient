@@ -1,6 +1,0 @@
-C:\Users\patri\Documents\GitHub\Project\SteamDirectorys\bin\Debug\SteamDirectorys.dll
-C:\Users\patri\Documents\GitHub\Project\SteamDirectorys\bin\Debug\SteamDirectorys.pdb
-C:\Users\patri\Documents\GitHub\Project\SteamDirectorys\obj\Debug\Steam.csproj.AssemblyReference.cache
-C:\Users\patri\Documents\GitHub\Project\SteamDirectorys\obj\Debug\Steam.csproj.CoreCompileInputs.cache
-C:\Users\patri\Documents\GitHub\Project\SteamDirectorys\obj\Debug\SteamDirectorys.dll
-C:\Users\patri\Documents\GitHub\Project\SteamDirectorys\obj\Debug\SteamDirectorys.pdb
